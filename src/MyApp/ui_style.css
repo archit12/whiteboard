@@ -1,0 +1,27 @@
+#header
+{
+	font:40px bold verdana;
+	text-align: center;
+}
+#navagation
+{
+	float: left;
+	width: 250px;
+}
+#canvas_area
+{
+	margin-top: 20px;
+	margin-left: 0px;
+
+
+}
+#share_text
+{
+	margin-top: 50px;
+	font: 20px bold verdana;
+	width: 100px;
+}
+#form_box
+{
+	display:block;
+}
