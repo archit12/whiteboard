@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#button
+		{
+			width: 200px;
+			height: 50px;
+			font: 25px calibri;
+			margin-left: 50px;
+			margin-top: 20px;
+		}
+
+	</style>
+
+
+</head>	
+<body>
+
+<canvas id="myCanvas" width="300" height="300"
+style="border:1px solid #d3d3d3; margin-left:500px; margin-top:200px;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var ans;
+function canvaso()
+{
+	 ans=prompt("what is ur name?");
+	 print();
+}
+
+function print()
+{
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText(ans,100,50);
+}
+</script>
+
+<button onclick="canvaso()" id="button">Enter new text </button>
+
+
+</body>
+</html>
