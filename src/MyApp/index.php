@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Whiteboard</title>
+    <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
 </head>
 <body>
     <div class="container" id="container">
@@ -10,6 +11,7 @@
 
     <input type="text" name="message" id="message">
     <button onclick="chat_loader();">Submit</button>
+    <a href="sample.php">Ajax loader</a>
     <div id="on_send"></div>
 
 </body>
@@ -34,6 +36,20 @@
     {
         var message=document.getElementById("message");
         conn.send(message.value);
+    }
+
+    function ajax_loader()
+    {
+        var new_message=document.getElementById("message");
+        $.ajax({
+            type:'GET',
+            url:'sample.php',
+            data:{query:new_message}
+        })
+        .done(function(data)
+        {
+            //to do
+        });
     }
 </script>
 </html>
