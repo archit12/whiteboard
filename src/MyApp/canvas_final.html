@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.button
+		{
+			width: 200px;
+			height: 50px;
+			font: 25px calibri;
+			margin-left: 50px;
+			margin-top: 20px;
+		}
+		#form_id
+		{
+			margin-top: 20px;
+			font: 25px calibri;
+			margin-left: 50px;
+			float: left;
+			width: 300px;
+		}
+
+	</style>
+
+
+</head>	
+<body>
+<button onclick="canvaso()" class="button">Share Text</button>
+
+
+
+<div id="form_id" >
+	<form action="" method="post" enctype="multipart/form-data">
+    Select image to upload:<br>
+    <input type="file" name="fileToUpload" id="fileToUpload" class="button"><br>
+    <input type="submit" value="Upload Image"  id="image_place" class="button" name="submit" onsubmit="image_post()">
+	</form>
+
+
+</div>
+
+<canvas id="myCanvas" width="500" height="500"
+style="border:1px solid #d3d3d3; margin-left:500px; margin-top:200px;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var ans;
+function canvaso()
+{
+	 ans=prompt("what is ur name?");
+	 print();
+}
+function image_post() {
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("image_place");
+    ctx.drawImage(img,0,0,200,200);
+}
+
+function print()
+{
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText(ans,100,50);
+}
+</script>
+
+
+
+</body>
+</html>
