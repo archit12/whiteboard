@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c3539e496247235252c80c03602dfe2e",
+    "hash": "cb1acb9e46be6ac970a43c964233061d",
     "packages": [
         {
             "name": "cboden/ratchet",
@@ -432,6 +432,49 @@
             "time": "2014-09-10 03:32:31"
         },
         {
+            "name": "sunra/php-simple-html-dom-parser",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sunra/php-simple-html-dom-parser.git",
+                "reference": "a0b80ace086c7e09085669205e1b3c2c9c7a453c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sunra/php-simple-html-dom-parser/zipball/a0b80ace086c7e09085669205e1b3c2c9c7a453c",
+                "reference": "a0b80ace086c7e09085669205e1b3c2c9c7a453c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sunra\\PhpSimple\\HtmlDomParser": "Src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sunra",
+                    "email": "sunra@yandex.ru",
+                    "homepage": "http://github.com/sunra"
+                }
+            ],
+            "description": "Composer adaptation of: A HTML DOM parser written in PHP5+ let you manipulate HTML in a very easy way! Require PHP 5+. Supports invalid HTML. Find tags on an HTML page with selectors just like jQuery. Extract contents from HTML in a single line.",
+            "homepage": "https://github.com/sunra/php-simple-html-dom-parser",
+            "keywords": [
+                "dom",
+                "html",
+                "parser"
+            ],
+            "time": "2013-05-04 14:32:03"
+        },
+        {
             "name": "symfony/event-dispatcher",
             "version": "v2.6.3",
             "target-dir": "Symfony/Component/EventDispatcher",
@@ -609,54 +652,12 @@
                 "url"
             ],
             "time": "2015-01-05 14:28:40"
-        },
-        {
-            "name": "yangqi/htmldom",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yangqi/Htmldom.git",
-                "reference": "5fac0fd569350c0b90f0ad7a9c54634786a5d66e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yangqi/Htmldom/zipball/5fac0fd569350c0b90f0ad7a9c54634786a5d66e",
-                "reference": "5fac0fd569350c0b90f0ad7a9c54634786a5d66e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Yangqi\\Htmldom": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "yangqi",
-                    "email": "i@yangqi.me"
-                }
-            ],
-            "description": "Simple Html Dom Parser for Laravel 4",
-            "keywords": [
-                "HTML Parser",
-                "laravel"
-            ],
-            "time": "2014-12-23 04:23:21"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "yangqi/htmldom": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

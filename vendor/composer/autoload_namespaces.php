@@ -6,10 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Yangqi\\Htmldom' => array($vendorDir . '/yangqi/htmldom/src'),
     'Symfony\\Component\\Routing\\' => array($vendorDir . '/symfony/routing'),
     'Symfony\\Component\\HttpFoundation\\' => array($vendorDir . '/symfony/http-foundation'),
     'Symfony\\Component\\EventDispatcher\\' => array($vendorDir . '/symfony/event-dispatcher'),
+    'Sunra\\PhpSimple\\HtmlDomParser' => array($vendorDir . '/sunra/php-simple-html-dom-parser/Src'),
+    'Sunra' => array($vendorDir . '/sunra/php-simple-html-dom-parser/Src'),
     'Ratchet' => array($vendorDir . '/cboden/ratchet/src'),
     'MyApp' => array($baseDir . '/src'),
     'Guzzle\\Stream' => array($vendorDir . '/guzzle/stream'),

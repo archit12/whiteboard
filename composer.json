@@ -1,11 +1,12 @@
 {
     "autoload": {
         "psr-0": {
-            "MyApp": "src"
+            "MyApp": "src",
+            "Sunra": "vendor/sunra/php-simple-html-dom-parser/Src"
         }
     },
     "require": {
         "cboden/ratchet": "0.3.*",
-        "yangqi/htmldom": "dev-master"
+        "sunra/php-simple-html-dom-parser": "v1.5.0"
     }
 }

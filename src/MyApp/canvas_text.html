@@ -23,6 +23,7 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 
 <script>
 var ans;
+var ml=50;
 function canvaso()
 {
 	 ans=prompt("what is ur name?");
@@ -34,7 +35,8 @@ function print()
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 ctx.font = "30px Arial";
-ctx.fillText(ans,100,50);
+ctx.fillText(ans,ml,mr);
+ml=ml+50;
 }
 </script>
 
